@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/digitalbazaar/bedrock-module-template-http",
   "dependencies": {
+    "bedrock-did-io": "^5.0.0",
     "esm": "^3.2.25"
   },
   "peerDependencies": {
