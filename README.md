@@ -1,1 +1,1 @@
-# bedrock-module-template-http
+# bedrock-did-resolver-http
