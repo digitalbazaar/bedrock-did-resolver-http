@@ -1,4 +1,4 @@
-# bedrock-module-template-http ChangeLog
+# bedrock-did-resolver-http ChangeLog
 
 ## 1.0.0 - TBD
 

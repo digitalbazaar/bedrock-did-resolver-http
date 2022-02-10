@@ -7,7 +7,7 @@ const {config} = require('bedrock');
 const path = require('path');
 
 // MongoDB
-config.mongodb.name = 'bedrock_module_template_http_test';
+config.mongodb.name = 'bedrock_did_resolver_http_test';
 config.mongodb.dropCollections.onInit = true;
 config.mongodb.dropCollections.collections = [];
 
