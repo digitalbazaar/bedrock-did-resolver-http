@@ -2,7 +2,8 @@
   "name": "bedrock-did-resolver-http",
   "version": "0.0.1-0",
   "description": "Bedrock HTTP API",
-  "main": "./lib",
+  "type": "module",
+  "main": "./lib/index.js",
   "scripts": {
     "lint": "eslint ."
   },
@@ -24,12 +25,11 @@
   "homepage": "https://github.com/digitalbazaar/bedrock-did-resolver-http",
   "dependencies": {
     "@bedrock/did-io": "^9.0.1",
-    "bnid": "^3.0.0",
-    "esm": "^3.2.25"
+    "bnid": "^3.0.0"
   },
   "peerDependencies": {
-    "bedrock": "^4.4.3",
-    "bedrock-express": "^6.3.0"
+    "@bedrock/core": "^6.0.0",
+    "@bedrock/express": "^8.0.0"
   },
   "directories": {
     "lib": "./lib"

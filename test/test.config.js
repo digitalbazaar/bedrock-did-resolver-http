@@ -2,8 +2,11 @@
  * Copyright (c) 2021 Digital Bazaar, Inc. All rights reserved.
  */
 
-const {config} = require('bedrock');
-const path = require('path');
+import {config} from '@bedrock/core';
+import {fileURLToPath} from 'node:url';
+import path from 'path';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // MongoDB
 config.mongodb.name = 'bedrock_did_resolver_http_test';
