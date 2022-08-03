@@ -24,7 +24,7 @@ jobs:
     timeout-minutes: 10
     services:
       mongodb:
-        image: mongo:4.2
+        image: mongo:4.4
         ports:
           - 27017:27017
     strategy:
@@ -37,6 +37,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: |
+        npm install
         cd test
         npm install
     - name: Run test with Node.js ${{ matrix.node-version }}
@@ -49,7 +50,7 @@ jobs:
     timeout-minutes: 10
     services:
       mongodb:
-        image: mongo:4.2
+        image: mongo:4.4
         ports:
           - 27017:27017
     strategy:
@@ -62,6 +63,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: |
+        npm install
         cd test
         npm install
     - name: Generate coverage report
