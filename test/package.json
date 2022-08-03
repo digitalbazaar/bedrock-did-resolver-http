@@ -5,20 +5,20 @@
   "type": "module",
   "scripts": {
     "test": "node --preserve-symlinks test.js test",
-    "coverage": "cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text-summary npm test",
-    "coverage-ci": "cross-env NODE_ENV=test nyc --reporter=lcovonly npm test",
-    "coverage-report": "nyc report"
+    "coverage": "cross-env NODE_ENV=test c8 --reporter=lcov --reporter=text-summary npm test",
+    "coverage-ci": "cross-env NODE_ENV=test c8 --reporter=lcovonly npm test",
+    "coverage-report": "c8 report"
   },
   "dependencies": {
     "@bedrock/core": "^6.0.0",
-    "bedrock-did-resolver-http": "file:..",
     "@bedrock/express": "^8.0.0",
     "@bedrock/https-agent": "^4.0.0",
     "@bedrock/mongodb": "^10.0.0",
     "@bedrock/server": "^5.0.0",
     "@bedrock/test": "^8.0.0",
-    "cross-env": "^7.0.3",
-    "nyc": "^15.1.0"
+    "bedrock-did-resolver-http": "file:..",
+    "c8": "^7.12.0",
+    "cross-env": "^7.0.3"
   },
   "nyc": {
     "excludeNodeModules": false,
