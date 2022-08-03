@@ -17,3 +17,8 @@ config.mocha.tests.push(path.join(__dirname, 'mocha'));
 
 // allow self-signed certs in test framework
 config['https-agent'].rejectUnauthorized = false;
+
+// server info
+config.server.port = 52443;
+config.server.httpPort = 52080;
+config.server.domain = 'localhost';
