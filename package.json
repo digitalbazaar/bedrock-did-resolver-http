@@ -27,6 +27,7 @@
     "@bedrock/did-io": "digitalbazaar/bedrock-did-io#use-next-release-did-io"
   },
   "peerDependencies": {
+    "@digitalbazaar/did-io": "^2.0.0",
     "@bedrock/core": "^6.0.0",
     "@bedrock/express": "^8.0.0"
   },
