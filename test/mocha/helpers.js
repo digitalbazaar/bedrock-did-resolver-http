@@ -10,7 +10,7 @@ const headers = {
 };
 
 export const makeRequest = async ({did}) => {
-  const basePath = '/1.0/resolve/identifiers/';
+  const basePath = '/1.0/identifiers/resolve/';
   const url = `https://localhost:52443${basePath}${encodeURIComponent(did)}`;
   const {data} = await httpClient.get(url, {headers, agent});
   return data;
