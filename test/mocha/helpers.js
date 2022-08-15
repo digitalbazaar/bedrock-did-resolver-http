@@ -1,7 +1,6 @@
 /*
  * Copyright (c) 2021-2022 Digital Bazaar, Inc. All rights reserved.
  */
-
 import {agent} from '@bedrock/https-agent';
 import {httpClient} from '@digitalbazaar/http-client';
 
