@@ -21,7 +21,7 @@
     "c8": "^7.12.0",
     "cross-env": "^7.0.3"
   },
-  "nyc": {
+  "c8": {
     "excludeNodeModules": false,
     "include": [
       "node_modules/bedrock-did-resolver-http/**"
