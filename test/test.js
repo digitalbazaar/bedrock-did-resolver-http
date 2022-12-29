@@ -1,12 +1,10 @@
 /*
  * Copyright (c) 2021 Digital Bazaar, Inc. All rights reserved.
  */
-'use strict';
+import * as bedrock from '@bedrock/core';
+import '@bedrock/https-agent';
+import '@bedrock/mongodb';
+import 'bedrock-did-resolver-http';
+import '@bedrock/test';
 
-const bedrock = require('bedrock');
-require('bedrock-https-agent');
-require('bedrock-mongodb');
-require('bedrock-did-resolver-http');
-
-require('bedrock-test');
-bedrock.start();
+bedrock.start().catch(err => console.error(err));
